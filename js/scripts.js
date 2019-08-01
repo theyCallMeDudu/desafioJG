@@ -1,51 +1,28 @@
-$( document ).ready(function() {
-    
-    // $("#entrada").change(function(){
-        
-    //     var numero = $("#entrada").val();
 
-    //     console.log(numero);
+var btnJG = document.getElementById("btn_jg");
 
-        // $.each(numero, function(indice, valor){
-        //     console.log("O elemento de índice [" + indice + "] tem o valor de " + valor);
-        // });
+btnJG.onclick = function(){
 
+    var numero = document.getElementById("entrada").value;     // recebe o valor do input
+    var listaElementos = document.getElementById('resultado'); // variável para montar o html
 
-    // });
+    for(var i = 0; i <= numero; i++){
+        if(i % 3 == 0 && i % 5 == 0){
+            //console.log("Jovens Gênios");
+            listaElementos.innerHTML += '<li>' + "Jovens Gênios" + '</li>';
+        }
+        else if(i % 3 == 0){
+            //console.log("Jovens");
+            listaElementos.innerHTML += '<li>' + "Jovens" + '</li>';
+        }
+        else if(i % 5 == 0){
+            //console.log("Gênios");
+            listaElementos.innerHTML += '<li>' + "Gênios" + '</li>';
+        }
+        else{
+            //console.log("");
+            listaElementos.innerHTML += '<li>' + i + '</li>';
+        }
+    }
 
-
-    $("#btn_jg").click(function(){
-        
-        var numero = $("#entrada").val();
-        //numero.toArray();
-
-        var array = $("#entrada").toArray();
-        console.log(array);
-
-        console.log(numero);
-
-        // $.each(numero, function(indice, valor){
-        //     console.log("O elemento de índice [" + indice + "] tem o valor de " + valor);
-        // });
-
-
-    });
-
-
-});
-
-//------------------------------------------------------------------------------------------
-
-// Tentativa em Vanilla JS
-
-// var input_usuario = document.getElementById("entrada");
-
-//     input_usuario.onkeyup = function(){
-//      var numero = document.getElementById("entrada").value;
-
-//     for(var a = 0; a < numero.length; a++){
-//             // console.log(numero[a]);
-//             //console.log(a);
-//             console.log(numero);
-//     }
-// }
+}
