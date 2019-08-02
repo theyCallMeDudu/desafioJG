@@ -3,8 +3,9 @@ var btnJG = document.getElementById("btn_jg");
 
 btnJG.onclick = function(){
 
-    var numero = document.getElementById("entrada").value;     // recebe o valor do input
-    var listaElementos = document.getElementById('resultado'); // variável para montar o html
+    var numero = document.getElementById("entrada").value;
+    var listaElementos = document.getElementById('resultado');
+    listaElementos.innerHTML = "";
 
     for(var i = 0; i <= numero; i++){
         if(i % 3 == 0 && i % 5 == 0){
