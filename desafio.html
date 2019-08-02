@@ -1,13 +1,62 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
+    
     <head>
         <script src="js/jquery-3.4.1.min.js"></script>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <title>Desafio JG</title>
 
         <style>
             body{
-                background-image: linear-gradient(270deg, #45356B, pink);
+                background-image: linear-gradient(270deg, #45356B, #EB5352);
+            }
+
+            #corpo{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+            }
+
+            .texto{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                color: #FFF;
+            }
+
+            #resultado{
+                color: #FFF;
+            }
+
+            /* #titulo{
+                flex-direction: row;
+                justify-content: center;
+            } */
+
+            h1{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                font-size: 28pt;
+                color: #FFF;
+            }
+
+            #interacao{
+                width: 415px;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                padding: 5px;
+                margin-top:3%;
+            }
+
+            #entrada{
+                width:402px;
+                margin: 3% 0;
             }
 
             .showbox {
@@ -42,7 +91,7 @@
                 stroke-dashoffset: 0;
                 animation: dash 1.5s ease-in-out infinite;
                 stroke-linecap: round;
-                stroke: #0c2780;
+                stroke: #FFF;
             }
 
             @keyframes rotate {
@@ -70,30 +119,35 @@
 
     </head>
     <body>
-        <h1>Desafio Jovens Gênios</h1>
+        <div id="corpo">
+            
+            <div id="interacao" class="border border-dark rounded">
+                
+                <div id="titulo">
+                    <h1>Desafio Jovens Gênios</h1>
+                </div>
 
-        <div id="interacao">
+                <p class="texto">Olá! Por favor, entre com um número inteiro:</p>
 
-            <p>Olá! Por favor, entre com um número inteiro:</p>
+                <input id="entrada" class="form-control" type="number">
 
-            <input id="entrada" type="number">
+                <button id="btn_jg" class="btn btn-dark" type="button">JG!</button>
 
-            <button id= "btn_jg" type="button">JG!</button>
+                <p id="resultado"></p>
 
-            <p id="resultado"></p>
-
-            <div id="spinner-loader" class="spinner-loader" style="display: none">
-                <div class="showbox">
-                    <div class="loader">
-                        <svg class="circular" viewBox="25 25 50 50">
-                        <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"/>
-                        </svg>
+                <div id="spinner-loader" class="spinner-loader" style="display: none">
+                    <div class="showbox">
+                        <div class="loader">
+                            <svg class="circular" viewBox="25 25 50 50">
+                            <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"/>
+                            </svg>
+                        </div>
                     </div>
                 </div>
+
             </div>
 
+            <script src="js/scripts02.js"></script>
         </div>
-
-        <script src="js/scripts02.js"></script>
     </body>
 </html>
