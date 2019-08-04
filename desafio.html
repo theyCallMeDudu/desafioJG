@@ -6,116 +6,11 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         
+        <link rel="stylesheet" href="css/style.css" media="screen" type="text/css">
+
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <title>Desafio JG</title>
-
-        <style>
-            body{
-                background-image: linear-gradient(270deg, #45356B, #EB5352);
-            }
-
-            #corpo{
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-            }
-
-            .texto{
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-                color: #FFF;
-            }
-
-            #resultado{
-                color: #FFF;
-            }
-
-            /* #titulo{
-                flex-direction: row;
-                justify-content: center;
-            } */
-
-            h1{
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-                font-size: 28pt;
-                color: #FFF;
-            }
-
-            #interacao{
-                width: 415px;
-                height: 100%;
-                display: flex;
-                flex-direction: column;
-                padding: 5px;
-                margin-top:3%;
-            }
-
-            #entrada{
-                width:402px;
-                margin: 3% 0;
-            }
-
-            .showbox {
-                padding: 5%;
-            }
-
-            .loader {
-                position: relative;
-                width: 75px;
-            }
-
-            .loader::before {
-                content: '';
-                display: block;
-                padding-top: 100%;
-            }
-
-            .circular {
-                animation: rotate 2s linear infinite;
-                height: 100%;
-                width: 100%;
-                position: absolute;
-                top: 0;
-                bottom: 0;
-                left: 0;
-                right: 0;
-                margin: auto;
-            }
-
-            .path {
-                stroke-dasharray: 2, 200;
-                stroke-dashoffset: 0;
-                animation: dash 1.5s ease-in-out infinite;
-                stroke-linecap: round;
-                stroke: #FFF;
-            }
-
-            @keyframes rotate {
-                100% {
-                    transform: rotate(360deg);
-                }
-            }
-
-            @keyframes dash {
-                0% {
-                    stroke-dasharray: 1, 200;
-                    stroke-dashoffset: 0;
-                }
-                50% {
-                    stroke-dasharray: 89, 200;
-                    stroke-dashoffset: -35px;
-                }
-                100% {
-                    stroke-dasharray: 89, 200;
-                    stroke-dashoffset: -124px;
-                }
-            }
-        </style>
-
 
     </head>
     <body>
