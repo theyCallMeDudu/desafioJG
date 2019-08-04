@@ -188,6 +188,7 @@ h1{
         }
 }
 
+/* Large devices */
 @media(min-width: 992px){
     #entrada{
         width:405px;
