@@ -187,3 +187,10 @@ h1{
             margin: 5% 0;
         }
 }
+
+@media(min-width: 992px){
+    #entrada{
+        width:405px;
+        margin: 3% 0;
+    }
+}
